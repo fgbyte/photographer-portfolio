@@ -1,0 +1,81 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+const profilePic = "https://static.wixstatic.com/media/c06e39_5df6c96aa4694fa58b560dd78b9c7034~mv2.jpg/v1/fill/w_640,h_790,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c06e39_5df6c96aa4694fa58b560dd78b9c7034~mv2.jpg";
+---
+
+<!-- HERO -->
+<section id="hero" class="hero container mb-5">
+  <div class="row">
+    <!-- SM/MD -->
+    <div class="col d-lg-none text-center">
+      <div class="hero__card d-lg-none">
+        <h3>
+          <span class="hero__title">Capturing your <br />memories</span>
+          <span><img src="./img/heart.png" alt="heart" /></span>
+        </h3>
+        <div class="hero__avatar">
+          <Picture
+            src={profilePic}
+            alt="Lucy.Photo Avatar"
+            widths={[100, 100, 300]}
+            aspectRatio="3:3"
+            sizes="(max-width: 800px) 100vw, 620px"
+            loading="eager"
+            format="avif"
+            class="rounded-full"
+          />
+          <p class="hero__description">Lucy Photography</p>
+        </div>
+        <a href="#pricings"
+          ><button class="btn-main mt-2">Watch Services📸</button></a
+        >
+      </div>
+      <div class="hero__down-scroll text-center py-5">
+        <a href="#services">
+          <!-- <img src="/svg/down-scroll.svg" alt="down-scroll" /> -->
+          <Image src="/svg/down-scroll.svg" format="avif" alt="scroll" aspectRatio="1:1" width={18} height={18}/>
+        </a>
+      </div>
+    </div>
+
+    <!-- LG/XLG -->
+    <div class="col-lg-6">
+      <div class="hero__card--lg d-none d-lg-block">
+        <h3>
+          <span class="hero__title">Capturing <br /> your memories</span>
+          <span><img src="./img/heart.png" alt="heart" /></span>
+        </h3>
+        <p>
+          Specialized Photography for Events, Weddings, Personal and Couples Sessions
+        </p>
+        <a href="#pricings"
+          ><button class="btn-main--md">Watch Services📸</button></a
+        >
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="hero__avatar--lg d-none d-lg-block">
+        <Picture
+          src={profilePic}
+          alt="Lucy.Photo Avatar"
+          widths={[100, 100, 700]}
+          aspectRatio="3:3"
+          sizes="(max-width: 800px) 100vw, 620px"
+          loading="eager"
+          format="avif"
+          class="rounded-full"
+        />
+        <p class="hero__description">Lucy Photography</p>
+      </div>
+    </div>
+    <div class="hero__down-scroll--lg py-lg-5 text-center d-none d-lg-block">
+      <a href="#services"><img src="/svg/down-scroll.svg" alt="" /></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rounded-full {
+    border-radius: 100%;
+  }
+</style>

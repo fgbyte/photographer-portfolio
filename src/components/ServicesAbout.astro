@@ -1,0 +1,190 @@
+---
+import { Picture } from "@astrojs/image/components";
+const pic1 = "https://i.pinimg.com/736x/51/01/cb/5101cbfae4a16235fa924e9096fc38bf--wedding-bride-bride-groom.jpg";
+const pic2 = "https://i.pinimg.com/736x/b1/49/32/b14932e3fdf34dccf56aa990b411f732.jpg";
+const pic3 = "https://i.pinimg.com/originals/82/1e/ae/821eae90b4f2a5ba11a021a215153999.jpg";
+const pic4 = "https://chelsearenay.com/wp-content/uploads/2021/01/Wedding-at-The-Meadow-in-Raleigh-NC_Chelsea-Renay__0156-683x1024.jpg";
+const pic5 = "https://chelsearenay.com/wp-content/uploads/2021/01/Wedding-at-The-Meadow-in-Raleigh-NC_Chelsea-Renay__0155-683x1024.jpg";
+
+const profilePic = "https://static.wixstatic.com/media/c06e39_5df6c96aa4694fa58b560dd78b9c7034~mv2.jpg/v1/fill/w_640,h_790,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c06e39_5df6c96aa4694fa58b560dd78b9c7034~mv2.jpg";
+---
+
+<!-- SERVICES -->
+<section class="services container mb-5">
+  <div class="row mt-4">
+    <div id="services" class="col-12 col-lg-6">
+      <!-- <h2 class="section-title d-lg-none">Shows</h2> -->
+      <div class="services__card text-md-center">
+        <div
+          id="services__card__carousel"
+          class="carousel slide carousel-card"
+          data-bs-ride="carousel"
+        >
+          <!-- INDICADORES -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#services__card__carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#services__card__carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#services__card__carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#services__card__carousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+              <button
+              type="button"
+              data-bs-target="#services__card__carousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+
+          <!-- AREA DEL CAROUSEL -->
+          <div class="carousel-area">
+            <div class="carousel-area__rectangle"></div>
+            <div class="carousel-item active">
+              <Picture
+                src={pic1}
+                class="carousel-item__image"
+                alt="..."
+                widths={[100, 100, 600]}
+                aspectRatio="2:3"
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+              />
+              <div class="carousel-item__text">
+                <a href="">
+                  <h3>#wedding_photography</h3>
+                </a>
+                <h3>+450 <span class="icon fa fa-heart"></span></h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <Picture
+                src={pic2}
+                class="carousel-item__image"
+                alt="..."
+                widths={[100, 100, 600]}
+                aspectRatio="2:3"
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+              />
+              <div class="carousel-item__text">
+                <a href="">
+                  <h3>#wedding_photography</h3>
+                </a>
+                <h3>+450 <span class="icon fa fa-heart"></span></h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <Picture
+                src={pic3}
+                class="carousel-item__image"
+                alt="..."
+                widths={[100, 100, 600]}
+                aspectRatio="2:3"
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="lazy"
+              />
+              <div class="carousel-item__text">
+                <a href="">
+                  <h3>#wedding_photography</h3>
+                </a>
+                <h3>+450 <span class="icon fa fa-heart"></span></h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <Picture
+                src={pic4}
+                class="carousel-item__image"
+                alt="..."
+                widths={[100, 100, 600]}
+                aspectRatio="2:3"
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="lazy"
+              />
+              <div class="carousel-item__text">
+                <a href="">
+                  <h3>#wedding_photography</h3>
+                </a>
+                <h3>+450 <span class="icon fa fa-heart"></span></h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <Picture
+                src={pic5}
+                class="carousel-item__image"
+                alt="..."
+                widths={[100, 100, 600]}
+                aspectRatio="2:3"
+                sizes="(max-width: 800px)"
+                loading="lazy"
+              />
+              <div class="carousel-item__text">
+                <a href="">
+                  <h3>#wedding_photography</h3>
+                </a>
+                <h3>+450 <span class="icon fa fa-heart"></span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="col-12 col-lg-6">
+      <div class="about mt-5">
+        <div class="about__top">
+          <h2 class="section-title">About me</h2>
+          <Picture
+            src={profilePic}
+            alt="avatar"
+            widths={[100, 100, 200]}
+            aspectRatio="3:3"
+            sizes="(max-width: 800px) 620px"
+            class="about__avatar rounded-full"
+            loading="eager"
+          />
+        </div>
+        <div class="about__body">
+          <p class="about__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente asperiores deserunt quo, tempora est, commodi voluptas laborum eos ex minima numquam cumque velit! Nesciunt ab vitae quisquam id mollitia ipsum ducimus numquam iusto voluptate eligendi ex accusamus maiores rem facilis, eaque tenetur architecto ullam aliquid quasi esse hic ea fugit.
+          </p>
+          <div class="about__footer mt-5 mt-lg-6">
+            <div class="mt-2">
+              <p>
+                Follow us on Instagram: <a
+                  href="#"
+                  target="_blank"><b>@example</b></a
+                >
+              </p>
+            </div>
+
+            <!-- <div class="about__social-icons">
+                        <a href=""><span class="about__instagram fab fa-instagram"></span></a>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rounded-full {
+    border-radius: 100%;
+  }
+</style>

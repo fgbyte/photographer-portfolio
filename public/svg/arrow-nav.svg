@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="9.237793px" height="15px" viewBox="0 0 9.237793 15" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="4.9855485" y2="4.237564" id="gradient_1">
+      <stop offset="0%" stop-color="#FF1B53" />
+      <stop offset="49.640995%" stop-color="#FFCE0F" />
+      <stop offset="100%" stop-color="#FF2B44" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="5.0143733" y2="4.2221646" id="gradient_2">
+      <stop offset="0%" stop-color="#FF1B53" />
+      <stop offset="49.640995%" stop-color="#FFCE0F" />
+      <stop offset="100%" stop-color="#FF2B44" />
+    </linearGradient>
+  </defs>
+  <g id="arrow" transform="matrix(4.371139E-08 1 1 -4.371139E-08 2.5 2.5)">
+    <path d="M0 0L4.98555 4.23756" id="Line" fill="none" fill-rule="evenodd" stroke="url(#gradient_1)" stroke-width="5" stroke-linecap="square" />
+    <path d="M4.98563 4.22216L10 0" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="url(#gradient_2)" stroke-width="5" stroke-linecap="square" />
+  </g>
+</svg>

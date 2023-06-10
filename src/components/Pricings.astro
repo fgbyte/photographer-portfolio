@@ -1,0 +1,392 @@
+---
+import { Picture } from "@astrojs/image/components";
+const wed1 = "https://i.pinimg.com/736x/51/01/cb/5101cbfae4a16235fa924e9096fc38bf--wedding-bride-bride-groom.jpg";
+const wed2 = "https://i.pinimg.com/736x/b1/49/32/b14932e3fdf34dccf56aa990b411f732.jpg";
+const wed3 = "https://i.pinimg.com/originals/82/1e/ae/821eae90b4f2a5ba11a021a215153999.jpg";
+const wed4 = "https://chelsearenay.com/wp-content/uploads/2021/01/Wedding-at-The-Meadow-in-Raleigh-NC_Chelsea-Renay__0156-683x1024.jpg";
+const port1 = "https://expertphotography.b-cdn.net/wp-content/uploads/2020/05/photo-of-woman-wearing-yellow.jpg";
+const port2 = "https://images.pexels.com/photos/4505269/pexels-photo-4505269.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+const port3 = "https://static.locals.md/2016/11/freckles-redheads-beautiful-portrait-photography-50-58356659273d8__700.jpg";
+const cou1 = "https://i.pinimg.com/564x/17/ed/1e/17ed1edfdf4c6342c82aaf8427b9cc72.jpg";
+const cou2 = "https://i.pinimg.com/736x/e8/19/6d/e8196d276c51ed449d99801786434be4.jpg";
+const cou3 = "https://i.pinimg.com/736x/2e/df/b8/2edfb8e663404449cf51362035d143f9.jpg";
+const pro1 = "https://media.istockphoto.com/id/602325480/photo/friends-in-paris.jpg?s=612x612&w=0&k=20&c=P1uURDitEi7EWEbSquDRFgghfi4HpfHoTKC19le2JM8=";
+const pro2 = "https://media.istockphoto.com/id/619255090/photo/friends-in-paris.jpg?s=612x612&w=0&k=20&c=KJQWihqEyrsZUD-G6RdkLU81g3pX45hocz49mB0AISY=";
+const pro3 = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/c4/8f/8b/centro-havana.jpg?w=500&h=400&s=1";
+---
+
+<!-- PRICINGS -->
+<section id="pricings" class="pricings container mb-5">
+  <div class="row mt-4">
+    <h2 class="section-title">Services</h2>
+    <div class="col-12 col-md-6">
+      <div class="pricings__card mt-2">
+        <div class="card__text">
+          <h2>Wedding</h2>
+          <p class="about__text">
+            Capture every special moment of your big day with our wedding photography package that includes:
+          </p>
+          <ul class="about__text">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li class="li__last">Lorem, ipsum dolor.</li>
+          </ul>
+          <h3>$150</h3>
+        </div>
+        <div class="card__image">
+          <div
+            id="studio-package__carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-area">
+              <div class="carousel-item active">
+                <Picture
+                  src={wed1}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="eager"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={wed2}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={wed3}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={wed4}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-area__rectangle">
+                <a href="#">
+                  <h4>#weddings</h4>
+                </a>
+                <a href="#contact">
+                  <button class="btn-main">Send request 📸</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="pricings__card mt-4 mt-md-2 mt-lg-2">
+        <div class="card__text">
+          <h2>Portrait</h2>
+          <p class="about__text">
+            Capture your beauty and personality with our portrait photography package.
+          </p>
+          <ul class="about__text">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li class="li__last">Lorem, ipsum dolor.</li>
+          </ul>
+          <h3>$150</h3>
+        </div>
+        <div class="card__image">
+          <div
+            id="studio-package__carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-area">
+              <div class="carousel-item active">
+                <Picture
+                  src={port1}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="eager"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={port2}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={port3}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-area__rectangle">
+                <a href="#">
+                  <h4>#portrait</h4>
+                </a>
+                <a href="#contact">
+                  <button class="btn-main">Send request 📸</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="pricings__card mt-4 mt-md-2 mt-lg-2">
+        <div class="card__text">
+          <h2>Couples</h2>
+          <p class="about__text">
+            Surprise your fiance with our couples photography package that includes:
+          </p>
+          <ul class="about__text">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li class="li__last">Lorem, ipsum dolor.</li>
+          </ul>
+          <h3>$150</h3>
+        </div>
+        <div class="card__image">
+          <div
+            id="studio-package__carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-area">
+              <div class="carousel-item active">
+                <Picture
+                  src={cou1}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="eager"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={cou2}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={cou3}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-area__rectangle">
+                <a href="#">
+                  <h4>#couples</h4>
+                </a>
+                <a href="#contact">
+                  <button class="btn-main">Send request 📸</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="pricings__card mt-4 mt-md-2 mt-lg-2">
+        <div class="card__text">
+          <h2>Excursions</h2>
+          <p class="about__text">
+            Capture the most memorable moments of your adventure with our excursion photography package.
+          </p>
+          <ul class="about__text">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li class="li__last">Lorem, ipsum dolor.</li>
+          </ul>
+          <h3>$150</h3>
+        </div>
+        <div class="card__image">
+          <div
+            id="studio-package__carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#studio-package__carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-area">
+              <div class="carousel-item active">
+                <Picture
+                  src={pro1}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="eager"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={pro2}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-item">
+                <Picture
+                  src={pro3}
+                  class="carousel-item__image"
+                  alt="..."
+                  widths={[100, 100, 600]}
+                  aspectRatio="1:1"
+                  sizes="(max-width: 800px) 100vw, 620px"
+                  loading="lazy"
+                  format="avif"
+                />
+              </div>
+              <div class="carousel-area__rectangle">
+                <a href="#">
+                  <h4>#tours</h4>
+                </a>
+                <a href="#contact">
+                  <button class="btn-main">Send request 📸</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

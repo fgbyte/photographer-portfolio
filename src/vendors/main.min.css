@@ -1,0 +1,395 @@
+
+
+/* Aqui termina el CSS de los Frameworks, Por lo que todo lo q sigue puede ser removido y usado solo en css en cada componente */
+
+
+
+
+
+.hero {
+  height: 100%;
+}
+.hero__card {
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .hero__card {
+    margin-top: 4.5rem;
+  }
+}
+.hero__card .hero__avatar img {
+  width: 100%;
+  max-width: 15rem;
+}
+.hero__card .hero__avatar p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.hero__card--lg {
+  margin-top: 35vh;
+  padding: 0 2rem 0 0;
+}
+.hero__avatar--lg {
+  text-align: center;
+  margin-top: 20vh;
+}
+.hero__avatar--lg img {
+  width: 100%;
+  max-width: 21.5rem;
+}
+.hero__avatar--lg p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.hero__down-scroll {
+  right: calc(50% - 8.35px);
+}
+
+.services {
+  height: 100%;
+}
+@media (max-width: 991.98px) {
+  .services {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.about__avatar {
+  width: 100%;
+  max-width: 8rem;
+}
+.about__body span {
+  color: #ff6b35;
+}
+.about__footer {
+  display: flex;
+  gap: 1rem;
+  /* justify-content: center; */
+}
+
+.pricings {
+  height: 100%;
+}
+
+.contact {
+  height: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #1993ce;
+}
+
+
+.hero__title {
+  background-image: linear-gradient(to right, #ff6b35, #ffce0f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+@media (max-width: 767.98px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
+
+.btn-main, .btn-main--md {
+  min-width: 8.5rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #ff6b35;
+  color: white;
+  font-weight: 700;
+}
+.btn-main a, .btn-main--md a {
+  color: white !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.btn-main a:hover, .btn-main--md a:hover {
+  color: white !important;
+}
+.btn-main:hover, .btn-main--md:hover {
+  background-color: #1993ce;
+}
+.btn-main--md {
+  width: 13rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+}
+.btn-main--md a {
+  font-size: 1.2rem;
+}
+.btn-main--md a:hover {
+  color: white;
+}
+
+.about__social-icons {
+  width: 13rem;
+  display: flex;
+  justify-content: space-between;
+}
+.about__social-icons span {
+  color: #e0e0e0;
+  font-size: 2.75rem;
+}
+.about__social-icons span:hover {
+  color: #1993ce;
+}
+
+.services__card {
+  position: relative;
+  border-radius: 8px;
+}
+
+.carousel-card {
+  max-width: 30.42rem;
+}
+.carousel.pointer-event {
+  touch-action: pan-y;
+}
+
+.services__card .carousel-indicators {
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+}
+.services__card .carousel-indicators button {
+  border-radius: 100%;
+  width: 0.33rem;
+}
+.services__card .carousel-indicators .active {
+  background-color: #ff6b35;
+  padding: 0.2rem;
+}
+.services__card .carousel-area {
+  height: 40rem;
+  max-width: 30.42rem;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 8px;
+}
+.services__card .carousel-area .carousel-item {
+  width: 100%;
+}
+.services__card .carousel-area .carousel-item__image {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.services__card .carousel-area .carousel-item__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+.services__card .carousel-area .carousel-item__text a {
+  color: #e0e0e0;
+  text-decoration-color: #e0e0e0;
+}
+.services__card .carousel-area .carousel-item__text a h3, .services__card .carousel-area .carousel-item__text a .h3 {
+  font-size: 1.2rem;
+}
+.services__card .carousel-area .carousel-item__text a:hover {
+  color: #1993ce;
+  text-decoration-color: #1993ce;
+}
+.services__card .carousel-area .carousel-item__text span {
+  color: #ff6b35;
+  margin-left: 0.1rem;
+}
+.services__card .carousel-area__rectangle {
+  position: absolute;
+  max-width: 30.42rem;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.pricings__card {
+  width: 100%;
+  max-width: 38.1875rem;
+  display: flex;
+  flex-direction: column;
+}
+.pricings__card .card__text {
+  max-width: 38.1875rem;
+  position: relative;
+}
+.pricings__card .card__text .li__last {
+  max-width: 30rem;
+}
+@media (max-width: 575.98px) {
+  .pricings__card .card__text .li__last {
+    max-width: 15rem;
+  }
+}
+.pricings__card .card__text h2, .pricings__card .card__text .h2 {
+  color: #ff6b35;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.pricings__card .card__text h3, .pricings__card .card__text .h3 {
+  color: #1993ce;
+  font-size: 3.125rem;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pricings__card .card__image {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+.pricings__card .card__image .carousel-indicators {
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+}
+.pricings__card .card__image .carousel-indicators button {
+  border-radius: 100%;
+  width: 0.33rem;
+}
+.pricings__card .card__image .carousel-indicators .active {
+  background-color: #ff6b35;
+  padding: 0.2rem;
+}
+.pricings__card .card__image .carousel-area {
+  height: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 8px;
+}
+.pricings__card .card__image .carousel-area .carousel-item {
+  width: 100%;
+}
+.pricings__card .card__image .carousel-area .carousel-item__image {
+  width: 100%;
+  object-fit: cover;
+  max-height: 37.5rem;
+  border-radius: 8px;
+}
+.pricings__card .card__image .carousel-area__rectangle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricings__card .card__image .carousel-area__rectangle a {
+  color: #e0e0e0;
+  text-decoration-color: #e0e0e0;
+}
+.pricings__card .card__image .carousel-area__rectangle a h4, .pricings__card .card__image .carousel-area__rectangle a .h4 {
+  font-size: 1.1rem;
+}
+.pricings__card .card__image .carousel-area__rectangle a:hover {
+  color: #1993ce;
+  text-decoration-color: #1993ce;
+}
+
+.contact__card {
+  margin-bottom: 1rem;
+  min-height: 5rem;
+  padding: 1rem 1rem 0.4rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.contact__card span {
+  color: #ff6b35;
+}
+.contact__card a {
+  text-decoration: none;
+}
+.contact__card p {
+  color: #1993ce;
+  font-size: 1.2rem;
+}
+.contact__card--lg {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 1rem 1rem 0.4rem 1rem;
+}
+.contact__card--lg span {
+  color: #ff6b35;
+}
+.contact__card--lg a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+.contact__card--lg p {
+  color: #1993ce;
+  font-size: 1.2rem;
+}
+.contact__card--lg:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.contact__form label span {
+  color: #ff6b35;
+}
+.contact__form label {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.contact__form input,
+.contact__form textarea {
+  background-color: #2e2a44;
+  border: none;
+}
+
+.about__text {
+  font-size: 1.2rem;
+}
+
+.about__footer {
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.about__footer a {
+  text-decoration: none;
+  color: #1993ce;
+}
+
+.footer a span {
+  width: 60px;
+  height: 40px;
+  font-size: 40px;
+}
